@@ -150,6 +150,10 @@
   border-left: 2px solid wheat;
 }
 
+.Numero{
+  text-shadow: -2px 2px 3px grey;
+}
+
 .Change{
   background-color: rgb(245, 222, 179);
   width: 20vw;

@@ -34,9 +34,9 @@ class Header extends Component{
   render() {
     return(
       <div className='Header'>
-        <h3 className='Inicio'>Home</h3>
+        <h3 className='Inicio' onClick={HomeBtn}>Home</h3>
         <h1 className='Titulo Violeta'> Math<span className='Span'>erial</span> </h1>
-        <h3 className='Info' onClick={ClickBtn}>Info</h3>
+        <h3 className='Info' onClick={InfoBtn}>Info</h3>
       </div>
     )
   }
@@ -46,8 +46,8 @@ class Main extends Component{
   render(){
     return(
       <div className='Tarjeta'>
-        <h1 className='Numero'></h1>
-        <p className='Dato'></p>
+        <h1 className='Numero Violeta'>Hi!</h1>
+        <p className='Dato'>First select one of the three buttons</p>
       </div>
     )
   }
@@ -140,6 +140,8 @@ const PonerEnPantalla = (datos) => {
 const CambioDeColor = () => {
   const Cambio1 = document.querySelector('.' + colores[color] + '')
   Cambio1.classList.remove(colores[color])
+  const Cambio3 = document.querySelector('.' + colores[color] + '')
+  Cambio3.classList.remove(colores[color])
   const Cambio2 = document.querySelector('.' + colores[color] + '-bg')
   Cambio2.classList.remove(colores[color] + "-bg")
   if (color === (colores.length - 1)){
@@ -149,11 +151,15 @@ const CambioDeColor = () => {
   }
   Cambio1.classList.add(colores[color])
   Cambio2.classList.add(colores[color] + "-bg")
+  Cambio3.classList.add(colores[color])
 }
 
-const ClickBtn = () => {
+const InfoBtn = () => {
   window.open('https://github.com/TinchoAmato')
 }
-datos()
+
+const HomeBtn = () => {
+  alert("You're in the Home Page now :)")
+}
 
 export default App;
