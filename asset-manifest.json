@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/MatherialReact/static/css/main.4dbe1a8d.css",
+    "main.css": "/MatherialReact/static/css/main.bf1f7980.css",
     "main.js": "/MatherialReact/static/js/main.f3a03817.js",
     "static/js/787.09581479.chunk.js": "/MatherialReact/static/js/787.09581479.chunk.js",
     "index.html": "/MatherialReact/index.html",
-    "main.4dbe1a8d.css.map": "/MatherialReact/static/css/main.4dbe1a8d.css.map",
+    "main.bf1f7980.css.map": "/MatherialReact/static/css/main.bf1f7980.css.map",
     "main.f3a03817.js.map": "/MatherialReact/static/js/main.f3a03817.js.map",
     "787.09581479.chunk.js.map": "/MatherialReact/static/js/787.09581479.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4dbe1a8d.css",
+    "static/css/main.bf1f7980.css",
     "static/js/main.f3a03817.js"
   ]
 }
