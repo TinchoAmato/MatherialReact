@@ -1,0 +1,166 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+  width: 100%;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+
+.Info, .Inicio{
+  cursor: pointer;
+}
+
+.Activo{
+  outline: 3px solid grey;
+  text-decoration: underline grey;
+}
+
+.Marron{
+  color:brown;
+  transition: all 1s;
+}
+
+.Marron-bg{
+  background-color: brown;
+  transition: all 1s;
+}
+
+.Naranja{
+  color: orange;
+  transition: all 1s;
+}
+
+.Naranja-bg{
+  background-color: orange;
+  transition: all 1s;
+}
+
+.Amarillo{
+  color: rgb(207, 207, 4);
+  transition: all 1s;
+}
+
+.Amarillo-bg{
+  background-color: rgb(207, 207, 4);
+  transition: all 1s;
+}
+
+.Verde{
+  color: green;
+  transition: all 1s;
+}
+
+.Verde-bg{
+  background-color: green;
+  transition: all 1s;
+}
+
+.Azul{
+  color: blue;
+  transition: all 1s;
+}
+
+.Azul-bg{
+  background-color: blue;
+  transition: all 1s;
+}
+
+.Celeste{
+  color: skyblue;
+  transition: all 1s;
+}
+
+.Celeste-bg{
+  background-color: skyblue;
+  transition: all 1s;
+}
+
+.Rojo{
+  color: red;
+  transition: all 1s;
+}
+
+.Rojo-bg{
+  background-color: red;
+  transition: all 1s;
+}
+
+.Violeta{
+  color: rgb(130, 112, 179);
+  transition: all 1s;
+}
+
+.Violeta-bg{
+  background-color: rgb(130, 112, 179);
+  transition: all 1s;
+}
+
+.Header{
+  background-color: rgba(245, 222, 179, 0.8 );
+  backdrop-filter: blur(100px);
+  -webkit-backdrop-filter: blur(100px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Header h3{
+  display: flex;
+  justify-content: center;
+  text-shadow: -1px 2px 2px rgb(128, 128, 128), -2px 3px 1px rgb(200, 200, 200);
+}
+
+.Titulo{
+  text-shadow: -1px 2px 2px rgb(128, 128, 128), -2px 3px 1px rgb(200, 200, 200);
+  text-align: center;
+}
+
+.Span{
+  color:black;
+}
+
+.Tarjeta{
+  border-radius: 75px 0;
+  padding: 10px 40px;
+  width: 75vw;
+  height: 25vh;
+  background-color: wheat;
+  margin: 30vh auto 10vh;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+}
+
+.Change{
+  background-color: rgb(245, 222, 179);
+  width: 20vw;
+  white-space: normal;
+  display:inline-block;
+  border: 1px solid grey;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+
+.BtnChange .Change:hover{
+  outline: 3px solid grey;
+}
+
+.Change:active{
+  scale: 1.05;
+}
+
+.Centrado{
+  display: flex;
+  justify-content:space-evenly;
+}
+
+@media (max-width: 500px) {
+  .Change{
+    width: 30vw;
+  }
+
+  .Tarjeta{
+    height: 30vh;
+  }
+}
