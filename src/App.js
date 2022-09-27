@@ -154,5 +154,6 @@ const CambioDeColor = () => {
 const ClickBtn = () => {
   window.open('https://github.com/TinchoAmato')
 }
+datos()
 
 export default App;

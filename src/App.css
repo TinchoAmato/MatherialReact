@@ -20,7 +20,7 @@
   transition: all 1s;
 }
 
-.Marron-bg{
+.Marron-bg, .Marron-bg > div > div > .Tarjeta::-webkit-scrollbar-thumb{
   background-color: brown;
   transition: all 1s;
 }
@@ -30,7 +30,7 @@
   transition: all 1s;
 }
 
-.Naranja-bg{
+.Naranja-bg, .Naranja-bg > div > div > .Tarjeta::-webkit-scrollbar-thumb{
   background-color: orange;
   transition: all 1s;
 }
@@ -40,7 +40,7 @@
   transition: all 1s;
 }
 
-.Amarillo-bg{
+.Amarillo-bg, .Amarillo-bg > div > div > .Tarjeta::-webkit-scrollbar-thumb{
   background-color: rgb(207, 207, 4);
   transition: all 1s;
 }
@@ -50,7 +50,7 @@
   transition: all 1s;
 }
 
-.Verde-bg{
+.Verde-bg, .Verde-bg > div > div > .Tarjeta::-webkit-scrollbar-thumb{
   background-color: green;
   transition: all 1s;
 }
@@ -60,7 +60,7 @@
   transition: all 1s;
 }
 
-.Azul-bg{
+.Azul-bg, .Azul-bg > div > div > .Tarjeta::-webkit-scrollbar-thumb{
   background-color: blue;
   transition: all 1s;
 }
@@ -70,7 +70,7 @@
   transition: all 1s;
 }
 
-.Celeste-bg{
+.Celeste-bg, .Celeste-bg > div > div > .Tarjeta::-webkit-scrollbar-thumb{
   background-color: skyblue;
   transition: all 1s;
 }
@@ -80,7 +80,7 @@
   transition: all 1s;
 }
 
-.Rojo-bg{
+.Rojo-bg, .Rojo-bg > div > div > .Tarjeta::-webkit-scrollbar-thumb{
   background-color: red;
   transition: all 1s;
 }
@@ -90,15 +90,13 @@
   transition: all 1s;
 }
 
-.Violeta-bg{
+.Violeta-bg, .Violeta-bg > div > div > .Tarjeta::-webkit-scrollbar-thumb{
   background-color: rgb(130, 112, 179);
   transition: all 1s;
 }
 
 .Header{
   background-color: rgba(245, 222, 179, 0.8 );
-  backdrop-filter: blur(100px);
-  -webkit-backdrop-filter: blur(100px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -120,21 +118,41 @@
 }
 
 .Tarjeta{
-  border-radius: 75px 0;
-  padding: 10px 40px;
+  box-shadow: -2px 2px 2px rgb(128, 128, 128), -3px 3px 5px rgb(50, 50, 50);
+  overflow-wrap: break-word;
+  padding: 10px 10px 10px 30px;
   width: 75vw;
   height: 25vh;
   background-color: wheat;
-  margin: 30vh auto 10vh;
+  margin: 20vh auto 10vh;
   display: flex;
   flex-wrap: wrap;
   text-align: center;
   align-items: center;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.Tarjeta:hover{
+  scale: 1.01;
+}
+
+.Tarjeta::-webkit-scrollbar{
+  position:absolute;
+  width: 10px;
+  
+}
+
+.Tarjeta::-webkit-scrollbar-thumb{
+  border-radius: 20px;
+  border-right: 2px solid wheat;
+  border-left: 2px solid wheat;
 }
 
 .Change{
   background-color: rgb(245, 222, 179);
   width: 20vw;
+  height: 5vh;
   white-space: normal;
   display:inline-block;
   border: 1px solid grey;
@@ -142,8 +160,9 @@
   margin-bottom: 15px;
 }
 
-.BtnChange .Change:hover{
+.Change:hover{
   outline: 3px solid grey;
+  cursor: pointer;
 }
 
 .Change:active{
