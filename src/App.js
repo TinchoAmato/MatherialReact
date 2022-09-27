@@ -36,7 +36,7 @@ class Header extends Component{
       <div className='Header'>
         <h3 className='Inicio'>Home</h3>
         <h1 className='Titulo Violeta'> Math<span className='Span'>erial</span> </h1>
-        <h3 className='Info' onClick={ClickBtn}>Information</h3>
+        <h3 className='Info' onClick={ClickBtn}>Info</h3>
       </div>
     )
   }
