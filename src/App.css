@@ -100,6 +100,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 10vh;
 }
 
 .Header h3{
@@ -124,7 +125,7 @@
   width: 75vw;
   height: 25vh;
   background-color: wheat;
-  margin: 20vh auto 10vh;
+  margin: 15vh auto 10vh;
   display: flex;
   flex-wrap: wrap;
   text-align: center;
